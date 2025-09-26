@@ -1,0 +1,110 @@
+/* styles.css */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #0b0f14;
+  color: #e6eef3;
+}
+header {
+  background: #111;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  color: #0ea5a3;
+}
+nav a {
+  color: #e6eef3;
+  margin-left: 1rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav a:hover {
+  color: #0ea5a3;
+}
+.hero {
+  padding: 3rem 2rem;
+  text-align: center;
+  background: radial-gradient(circle at top, #0ea5a3 0%, transparent 70%);
+}
+.cards {
+  padding: 2rem;
+}
+.cards h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #0ea5a3;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+.card {
+  background: #1a1f26;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+  transition: transform 0.3s;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+.card img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+}
+.card h3 {
+  margin: 1rem;
+  color: #0ea5a3;
+}
+.card p {
+  margin: 0 1rem 1rem;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+footer {
+  background: #111;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+}
+
+.easter-egg-item {
+    cursor: pointer;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #333;
+    border-radius: 8px;
+    transition: transform 0.2s ease;
+    background-color: #1a1a1a;
+  }
+  .easter-egg-item:hover {
+    transform: scale(1.05);
+    background-color: #2a2a2a;
+  }
+  .easter-egg-details {
+    display: none;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #0d0d0d;
+    border-radius: 5px;
+  }
+  .easter-egg-details p {
+    margin: 0 0 10px 0;
+    color: #ccc;
+  }
+  .easter-egg-details h4 {
+    color: #999;
+    margin-top: 0;
+  }
+  
